@@ -1,0 +1,247 @@
+.cart-page {
+  display: flex;
+  gap: 25px;
+  padding: 30px 35px;
+  background-color: #eaeded;
+  min-height: 80vh;
+}
+
+
+/* LEFT CART */
+
+.cart-left {
+  background-color: white;
+  padding: 28px;
+  flex: 1;
+}
+
+
+.cart-left h1 {
+  font-size: 30px;
+  margin: 15px 0 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.cart-items-count {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+
+/* BACK BUTTON */
+
+.back-btn {
+  border: none;
+  background: none;
+  color: #007185;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+
+.back-btn:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+
+/* CART ITEM */
+
+.cart-item {
+  display: flex;
+  gap: 30px;
+  padding: 25px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.cart-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+
+/* PRODUCT INFO */
+
+.cart-item-info {
+  flex: 1;
+}
+
+
+.cart-item-info h2 {
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+
+
+.cart-description {
+  color: #555;
+  line-height: 1.5;
+  max-width: 750px;
+}
+
+
+.cart-price {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+
+/* QUANTITY */
+
+.quantity-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.quantity-label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #888;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.quantity button {
+  width: 38px;
+  height: 35px;
+  border: none;
+  background-color: #f3f3f3;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.quantity button:hover {
+  background-color: #ddd;
+}
+
+
+.quantity span {
+  min-width: 40px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+/* REMOVE */
+
+.remove-btn {
+  border: none;
+  background: none;
+  color: #007185;
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+
+.remove-btn:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+
+/* RIGHT SUMMARY */
+
+.cart-right {
+  width: 300px;
+  height: fit-content;
+  background-color: white;
+  padding: 28px;
+}
+
+
+.cart-right h2 {
+  margin-top: 0;
+  font-size: 25px;
+}
+
+
+.cart-right p {
+  font-size: 16px;
+}
+
+
+.total {
+  font-size: 24px !important;
+  margin: 25px 0;
+}
+
+
+.total strong {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
+/* CHECKOUT */
+
+.checkout-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ffd814;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.checkout-btn:hover {
+  background-color: #f7ca00;
+}
+
+
+/* EMPTY CART */
+
+.empty-cart {
+  text-align: center;
+  padding: 80px 20px;
+  min-height: 50vh;
+}
+
+
+.empty-cart h1 {
+  margin-top: 30px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .cart-page {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .cart-right {
+    width: auto;
+  }
+
+  .cart-item {
+    flex-direction: column;
+  }
+
+  .cart-item img {
+    width: 160px;
+    height: 160px;
+  }
+
+}

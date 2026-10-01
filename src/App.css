@@ -1,0 +1,14 @@
+.products {
+  background: #e3e6e6;
+  padding: 30px;
+}
+
+.products h2 {
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+} 
